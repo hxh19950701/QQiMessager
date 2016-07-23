@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+	<LinearLayout android:layout_width="match_parent"
+				  android:layout_height="50dp"
+				  android:background="#292c29">
+		<LinearLayout android:id="@+id/ll_titlebar_cancel"
+					  android:layout_width="wrap_content"
+					  android:layout_height="match_parent"
+					  android:background="@drawable/selector_tab_bg">
+			<ImageView android:layout_width="55dp"
+					   android:layout_height="50dp"
+					   android:scaleType="fitXY"
+					   android:src="@drawable/selector_cancel_btn_bg"/>
+			<ImageView android:layout_width="50dp"
+					   android:layout_height="50dp"
+					   android:padding="10dp"
+					   android:src="@mipmap/r_k_isc_png"/>
+		</LinearLayout>
+		<EditText android:layout_width="0dp"
+				  android:layout_height="match_parent"
+				  android:layout_weight="1"
+				  android:id="@+id/et_search_keyword"
+				  android:hint="@string/search_hint"
+				  android:singleLine="true"
+				  android:textColor="#FFFFFF"
+				  android:textColorHint="#AAAAAA"/>
+	</LinearLayout>
+	<ListView android:id="@+id/lv_search_result"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"/>
+</LinearLayout>

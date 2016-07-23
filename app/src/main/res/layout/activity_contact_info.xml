@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.hxh19950701.qqimessager.ui.activity.ContactInfoActivity">
+
+	<RelativeLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+		<ImageView android:id="@+id/ivContactInfoAvatar"
+				   android:layout_width="50dp"
+				   android:layout_height="50dp"
+				   android:background="@mipmap/img_default_avatar"/>
+		<TextView android:id="@+id/tvContactInfoName"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_marginLeft="3dp"
+				  android:layout_marginTop="3dp"
+				  android:layout_toRightOf="@id/ivContactInfoAvatar"
+				  android:singleLine="true"
+				  android:text="@string/app_name"
+				  android:textColor="#000000"
+				  android:textSize="18sp"/>
+		<TextView android:id="@+id/tvContactInfoAddress"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_below="@id/tvContactInfoName"
+				  android:layout_marginLeft="3dp"
+				  android:layout_marginTop="3dp"
+				  android:layout_toRightOf="@id/ivContactInfoAvatar"
+				  android:singleLine="true"
+				  android:text="@string/app_name"
+				  android:textSize="15sp"/>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp">
+		<TextView android:layout_width="match_parent"
+				  android:layout_height="wrap_content"
+				  android:text="E-mail"
+				  android:textSize="15sp"/>
+	</RelativeLayout>
+</LinearLayout>

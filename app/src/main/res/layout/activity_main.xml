@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context=".ui.activity.MainActivity">
+
+	<RelativeLayout android:layout_width="match_parent"
+					android:layout_height="50dp">
+		<!-- topBar-->
+		<LinearLayout android:layout_width="match_parent"
+					  android:layout_height="50dp"
+					  android:background="#292C29">
+			<!-- conversation-->
+			<RelativeLayout android:id="@+id/rl_tab_conversation"
+							android:layout_width="0dp"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:background="@drawable/selector_tab_bg">
+				<ImageView android:id="@+id/iv_tab_conversation"
+						   android:layout_width="30dp"
+						   android:layout_height="28dp"
+						   android:layout_centerInParent="true"
+						   android:background="@mipmap/skin_tab_icon_conversation_normal"/>
+			</RelativeLayout>
+			<!--contact-->
+			<RelativeLayout android:id="@+id/rl_tab_contact"
+							android:layout_width="0dp"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:background="@drawable/selector_tab_bg">
+				<ImageView android:id="@+id/iv_tab_contact"
+						   android:layout_width="30dp"
+						   android:layout_height="28dp"
+						   android:layout_centerInParent="true"
+						   android:background="@mipmap/skin_tab_icon_contact_normal"/>
+			</RelativeLayout>
+			<!--plugin-->
+			<RelativeLayout android:id="@+id/rl_tab_plugin"
+							android:layout_width="0dp"
+							android:layout_height="match_parent"
+							android:layout_weight="1"
+							android:background="@drawable/selector_tab_bg">
+				<ImageView android:id="@+id/iv_tab_plugin"
+						   android:layout_width="30dp"
+						   android:layout_height="28dp"
+						   android:layout_centerInParent="true"
+						   android:background="@mipmap/skin_tab_icon_plugin_normal"/>
+			</RelativeLayout>
+		</LinearLayout>
+		<View android:id="@+id/indicate_line"
+			  android:layout_width="120dp"
+			  android:layout_height="5dp"
+			  android:layout_alignParentBottom="true"
+			  android:background="#007755"/>
+	</RelativeLayout>
+
+	<android.support.v4.view.ViewPager android:id="@+id/viewPager"
+									   android:layout_width="match_parent"
+									   android:layout_height="match_parent">
+	</android.support.v4.view.ViewPager>
+
+</LinearLayout>

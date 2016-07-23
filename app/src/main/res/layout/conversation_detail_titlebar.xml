@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:background="#292c29">
+	<RelativeLayout android:id="@+id/rl_total_title"
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:background="@drawable/selector_tab_bg"
+					android:paddingRight="5dp">
+		<ImageView android:id="@+id/iv_titlebar_cancel"
+				   android:layout_width="55dp"
+				   android:layout_height="50dp"
+				   android:scaleType="fitXY"
+				   android:src="@drawable/selector_cancel_btn_bg"/>
+		<TextView android:id="@+id/tv_titlebar_title"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_marginTop="3dp"
+				  android:layout_toRightOf="@id/iv_titlebar_cancel"
+				  android:text="@string/app_name"
+				  android:textColor="#FFFFFF"
+				  android:textSize="20sp"/>
+		<TextView android:id="@+id/tv_titlebar_title_detail"
+				  android:layout_width="wrap_content"
+				  android:layout_height="wrap_content"
+				  android:layout_below="@id/tv_titlebar_title"
+				  android:layout_toRightOf="@id/iv_titlebar_cancel"
+				  android:text="@string/app_name"
+				  android:textColor="#FFFFFF"/>
+	</RelativeLayout>
+</RelativeLayout>

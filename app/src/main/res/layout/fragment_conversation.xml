@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+	<ListView android:id="@+id/lv_conversation_list"
+			  android:layout_width="match_parent"
+			  android:layout_height="0dp"
+			  android:layout_weight="1"/>
+	<RelativeLayout android:layout_width="match_parent"
+					android:layout_height="45dp"
+					android:background="@drawable/selector_tab_bg">
+		<RelativeLayout android:id="@+id/rl_conversation_new"
+						android:layout_width="60dp"
+						android:layout_height="45dp"
+						android:background="@drawable/selector_btn_bg">
+			<ImageView android:layout_width="27dp"
+					   android:layout_height="27dp"
+					   android:layout_centerInParent="true"
+					   android:background="@mipmap/r_k_select_member_discussion_icon_png"/>
+		</RelativeLayout>
+		<View android:layout_width="match_parent"
+			  android:layout_height="1dp"
+			  android:background="#33555555"/>
+		<RelativeLayout android:id="@+id/rl_conversation_search"
+						android:layout_width="60dp"
+						android:layout_height="45dp"
+						android:layout_alignParentRight="true"
+						android:background="@drawable/selector_btn_bg">
+			<ImageView android:layout_width="33dp"
+					   android:layout_height="33dp"
+					   android:layout_centerInParent="true"
+					   android:background="@mipmap/r_k_isb_png"/>
+		</RelativeLayout>
+	</RelativeLayout>
+</LinearLayout>

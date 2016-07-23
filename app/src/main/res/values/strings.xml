@@ -1,0 +1,16 @@
+<resources>
+	<string name="app_name">QQiMessager</string>
+	<string name="title_detail">%1$d条对话</string>
+	<string name="search_hint">输入联系人号码或短信记录搜索</string>
+	<string name="new_conversation_hint">输入联系人号码搜索</string>
+	<string name="conversation_option">对话选项</string>
+	<string-array name="conversation_option_item">
+		<item>删除这个会话</item>
+		<item>删除这个联系人</item>
+		<item>删除这个会话和联系人</item>
+	</string-array>
+	<string name="conversation_option_delete_dialog_title">确定要删除吗</string>
+	<string name="conversation_option_delete_dialog_message">此过程无法撤销。</string>
+	<string name="_continue">继续</string>
+	<string name="cancel">取消</string>
+</resources>
